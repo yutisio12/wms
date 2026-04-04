@@ -1,37 +1,120 @@
-HELP.md
-.gradle
+#######################################
+# BUILD FILES
+#######################################
+.gradle/
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+#######################################
+# JAVA
+#######################################
+*.class
 
-### IntelliJ IDEA ###
-.idea
+#######################################
+# LOG FILES
+#######################################
+*.log
+logs/
+
+#######################################
+# TEMP FILES
+#######################################
+tmp/
+temp/
+
+#######################################
+# PACKAGE FILES (optional safety)
+#######################################
+*.jar
+*.war
+*.ear
+
+#######################################
+# OS FILES
+#######################################
+.DS_Store
+Thumbs.db
+
+#######################################
+# SPRING BOOT DEVTOOLS
+#######################################
+.restart/
+
+#######################################
+# ENV & SECRET FILES (PENTING 🔥)
+#######################################
+.env
+.env.*
+*.env
+
+# Spring config (jangan commit credential)
+application.properties
+application.yml
+application-*.properties
+application-*.yml
+
+#######################################
+# DATABASE & CREDENTIALS
+#######################################
+*.db
+*.sqlite
+*.sqlite3
+
+# key / cert / secret
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+
+#######################################
+# IDE - IntelliJ IDEA
+#######################################
+.idea/
 *.iws
 *.iml
 *.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### NetBeans ###
+#######################################
+# IDE - Eclipse / STS
+#######################################
+.project
+.classpath
+.settings/
+.springBeans
+.sts4-cache
+bin/
+
+#######################################
+# IDE - NetBeans
+#######################################
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
+#######################################
+# IDE - VS Code
+#######################################
 .vscode/
+
+#######################################
+# TEST & COVERAGE
+#######################################
+/test-output/
+/coverage/
+/build/reports/
+
+#######################################
+# DOCKER (kalau nanti pakai)
+#######################################
+*.pid
+*.seed
+*.pid.lock
+
+#######################################
+# MISC
+#######################################
+HELP.md
