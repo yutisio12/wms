@@ -16,7 +16,7 @@ public interface StockQueryRepository extends Repository<StockMovement, UUID> {
           coalesce(sum(sm.quantity), 0)
         FROM StockMovement sm
         WHERE
-          sm.productId = :productId
+          sm.product_id = :productId
       """)
   BigDecimal getStock(@Param("productId") UUID productId);
 
