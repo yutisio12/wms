@@ -15,4 +15,5 @@ public abstract class BaseEntity {
   private UUID id;
 
   private LocalDateTime createdAt;
+  private LocalDateTime createdDate;
 }
