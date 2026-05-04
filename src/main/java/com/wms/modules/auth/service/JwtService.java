@@ -22,11 +22,11 @@ public class JwtService {
         .compact();
   }
 
-  // public String validate(String token) {
-  // return Jwts.parser()
-  // .setSigningKey(SECRET)
-  // .parseClaimsJws(token)
-  // .getBody()
-  // .getSubject();
-  // }
+  public String validate(String token) {
+    return Jwts.parser()
+        .setSigningKey(SECRET)
+        .parseClaimsJws(token)
+        .getBody()
+        .getSubject();
+  }
 }
