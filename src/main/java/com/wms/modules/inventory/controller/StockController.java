@@ -17,7 +17,7 @@ public class StockController {
 
   @GetMapping("/health")
   public String health() {
-    return health.ok();
+    return "200";
   }
 
   @PostMapping("/add")
