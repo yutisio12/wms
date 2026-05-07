@@ -24,5 +24,6 @@ public class StockMovement extends BaseEntity {
   private String movementType;
   private String referenceType;
   private UUID referenceId;
+  private Long statusDelete
 
 }
