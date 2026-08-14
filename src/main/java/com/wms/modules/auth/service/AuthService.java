@@ -16,7 +16,7 @@ public class AuthService {
         .orElseThrow(() -> new RuntimeException("User not found"));
 
     if (!user.getPassword().equals(password)) {
-      throw new RuntimeException("Wrong password");
+      throw new RuntimeException("Wrong password!");
     }
 
     if (user.getTwoFaSecret() != null) {
