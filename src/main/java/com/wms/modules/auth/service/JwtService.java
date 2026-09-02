@@ -10,7 +10,7 @@ import java.util.UUID;
 @Service
 public class JwtService {
 
-  private final String SECRET = "super-secret-key";
+  private final String SECRET = "RESERVEFROMENVSOON";
 
   public String generateToken(UUID userId) {
 
