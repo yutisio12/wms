@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/stocks")
+@RequestMapping("/stock")
 @RequiredArgsConstructor
 public class StockController {
   private final StockService service;
