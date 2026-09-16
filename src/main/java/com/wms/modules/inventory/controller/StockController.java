@@ -20,8 +20,8 @@ public class StockController {
     return "ok";
   }
 
-  @PostMapping("/add")
-  // @GetMapping("/add")
+  //@PostMapping("/add")
+  @GetMapping("/add")
   public String add() {
     service.addStock(
         UUID.randomUUID(),
