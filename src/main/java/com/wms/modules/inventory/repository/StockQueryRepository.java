@@ -13,6 +13,7 @@ public interface StockQueryRepository extends Repository<StockMovement, UUID> {
 
   @Query("""
         SELECT
+          product_id, 
           coalesce(sum(sm.quantity), 0)
         FROM StockMovement sm
         WHERE
